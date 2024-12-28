@@ -1,0 +1,217 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+  }
+  
+  section {
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+  }
+  
+  #home {
+    background: linear-gradient(135deg, #909290, #686868);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  #home .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #home .logo img {
+    width: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  #home h1 {
+    margin-top: 20px;
+    font-size: 3em;
+  }
+  
+  #home .center-photo {
+    width: 250px;
+    margin: 20px 0;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+  }
+  
+  #about {
+    background: url('about-background.jpg') no-repeat center center/cover;
+    position: relative;
+  }
+  
+  #about .content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+  }
+  
+  #about .side-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #about .side-images img {
+    width: 45%;
+    border: 5px solid #fff;
+    border-radius: 15px;
+  }
+  
+  .about-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+  }
+  
+  #features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #333;
+  }
+  
+  .feature-box {
+    width: 100%;
+    background: #444;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    margin-left: -90%;
+  }
+  
+  .feature-box:hover {
+    transform: scale(1.05);
+    background: #555;
+  }
+  
+  #gallery {
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  .photo-row {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .photo-row.reverse {
+    animation-direction: reverse;
+  }
+  
+  .photo-row img {
+    width: 33.33%;
+    padding: 5px;
+    border: 3px solid #fff;
+    transition: transform 0.3s;
+  }
+  
+  .photo-row img:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .rubik-burned-regular {
+    font-family: "Rubik Burned", system-ui;
+  }
+  
+  .feature-box1 {
+    width: 100%;
+    background: #444;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    position: relative;
+    margin-left: 70%;
+    margin-top: -100%;
+    font-family: "Rubik Burned", system-ui;
+  }
+
+  .feature-box1:hover {
+    transform: scale(1.05);
+    background: #555;
+  }
+
+  #copy-button {
+    background-color: #3e6b96;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-top: 10px;
+    font-family: "Tourney", sans-serif;
+    overflow-x: hidden;
+    color: #ffffff;
+  }
+
+#copy-button:hover {
+  background-color: #5d17ff;
+    ;
+}
+
+#copy-text{
+    background-color: #1273e6;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-top: 10px;
+    font-family: "Tourney", sans-serif;
+  overflow-x: hidden;
+  color: #ffffff;
+}
